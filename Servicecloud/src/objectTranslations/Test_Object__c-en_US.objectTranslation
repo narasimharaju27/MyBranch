@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Test Object</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Test Objects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Test Objects --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Test Object Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- My Section --></label>
+            <section>My Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This is not allowed --></errorMessage>
+        <name>Test_name</name>
+    </validationRules>
+</CustomObjectTranslation>

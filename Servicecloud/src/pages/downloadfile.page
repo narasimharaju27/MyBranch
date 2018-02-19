@@ -1,0 +1,5 @@
+<apex:page controller="Download" >
+<apex:form >
+  <apex:commandButton value="OK" onclick="window.open('/servlet/servlet.FileDownload?file={!recid}?export=1&enc=UTF-8&xf=csv');"/>
+  </apex:form>
+</apex:page>

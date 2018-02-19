@@ -1,0 +1,38 @@
+<apex:page StandardController="Account" extensions="Mycontrollernew">
+     
+    <apex:form >
+    <apex:actionFunction name="Callmefunc" action="{!makingfield}" reRender="refresh">
+                   
+   </apex:actionFunction>
+        
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+           
+        <apex:pageBlockSectionItem >
+       <apex:outputlabel value="3rd Party Item & IP Associations"/>
+      <apex:outputPanel id="ipa" >
+       <apex:actionRegion > 
+     <apex:inputField value="{!account.SLAExpirationDate__c}" id="check1" >
+     <apex:actionSupport event="onchange" action="{!makingfield}" reRender="refresh"/>
+     </apex:inputField>   
+        </apex:actionRegion>
+    </apex:outputPanel> 
+    </apex:pageBlockSectionItem>
+        
+        
+        <apex:pageBlockSectionItem >
+       <apex:outputlabel value="3rd Party Item & IP Associations"/>
+      <apex:outputPanel id="refresh" >
+       <apex:actionRegion > 
+     <apex:outputField value="{!account.SLAExpirationDate__c}" id="check2">
+     </apex:outputField>
+     
+        </apex:actionRegion>
+    </apex:outputPanel> 
+    </apex:pageBlockSectionItem>
+       
+             </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+     </apex:form>
+ </apex:page>

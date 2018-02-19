@@ -1,0 +1,15 @@
+<apex:page controller="classacc">
+  <apex:sectionHeader title="Contact Edit" subtitle="{!contact.name}" />
+  <apex:form >
+    <apex:pageBlock mode="mainDetail">
+      <apex:pageBlockButtons >
+        <!--apex:commandButton value="Save" action="{!save}" /-->
+        <!--apex:commandButton value="Cancel" action="{!cancel}" /-->
+      </apex:pageBlockButtons>
+     <!-- The name of the component and its atributes -->
+      <c:cmpt contact="{!Contact}"/>
+      
+    </apex:pageBlock>
+
+  </apex:form>
+</apex:page>

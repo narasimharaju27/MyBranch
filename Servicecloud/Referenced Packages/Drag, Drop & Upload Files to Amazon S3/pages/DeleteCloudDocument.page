@@ -1,0 +1,17 @@
+<apex:page standardController="DragDropToCloud__Cloud_Documents__c" extensions="DragDropToCloud.DeleteCloudDocumentExtensions" ><!--action="{!deleteFileInS3}"-->
+    <script>
+        window.onload=function(){
+            onloadAF();
+        };
+    </script>
+    <apex:pageMessages id="pm" />
+    <apex:form >
+        <apex:actionFunction name="onloadAF" action="{!deleteFileInS3}" reRender="pm" status="deletingActionStatus"/>
+    </apex:form>
+    <br/><h1 style="font-size:20px;">Deleting file from Amazon (S3) Server ...</h1>
+    <apex:actionStatus id="deletingActionStatus" >
+        <apex:facet name="start" >
+          <img src="/img/loading.gif" />                    
+        </apex:facet>
+    </apex:actionStatus>    
+</apex:page>

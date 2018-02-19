@@ -1,0 +1,10 @@
+<apex:page controller="testingcntrl" renderAs="Pdf" action="{!testingcntrls}">
+  <apex:form >
+      <apex:pageBlock >
+          <apex:pageBlockTable var="ac" value="{!lstContacts}">
+              <apex:column headerValue="test" value="{!ac.id}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <apex:column headerValue="Name" value="{!ac.Name}"/>
+          </apex:pageBlockTable>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

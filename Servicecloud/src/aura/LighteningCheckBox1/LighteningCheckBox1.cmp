@@ -1,0 +1,5 @@
+<aura:component >
+ <aura:attribute name="myBool" type="string" />
+ <!--ui:inputCheckbox aura:id="checkbox"  label="Select?" change="{!c.onCheck}"/-->
+ <ui:inputcheckbox text="Narasimharaju" label="Narasimharaju" change="{!c.onCheck}"/>
+</aura:component>

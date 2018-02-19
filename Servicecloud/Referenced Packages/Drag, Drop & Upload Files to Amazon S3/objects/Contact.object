@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Upload_Files_to_Amazon_S3</fullName>
+        <availability>online</availability>
+        <description>Drag, Drop &amp; Upload Files to Amazon S3</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Upload files to Amazon S3</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/DragDropToCloud__DragDropUploader?parent_id={!Contact.Id}</url>
+    </webLinks>
+</CustomObject>

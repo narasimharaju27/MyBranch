@@ -1,0 +1,19 @@
+<aura:component controller="AccountController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="searchKey" type="String" default=""/>
+    <aura:attribute name="Accounts" type="Account[]"/>
+    
+    <ui:inputText value="{!v.searchKey}" keyup="{!c.searchKeyChange}"
+            placeholder="Search" updateOn="keyup"/>
+    <ui:button class="btn" label="Submit" press="{!c.searchKeyChange}"/>
+	<span class="glyphicon glyphicon-search form-control-feedback">
+    
+        <aura:iteration items="{!v.Accounts}" var="Acc">
+            
+                <a href="{! '#Acc/' + Acc.Id }">
+                    <p>{!Acc.Name}</p>
+                </a>
+            
+        </aura:iteration>
+    
+    </span>
+</aura:component>

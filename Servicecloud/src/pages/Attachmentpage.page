@@ -1,0 +1,2 @@
+<apex:page standardController="Attachment__c" extensions="Attachmentclass" action="{!pageLoad}"  id="apage">
+</apex:page>

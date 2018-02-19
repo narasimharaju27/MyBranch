@@ -1,0 +1,9 @@
+<aura:component >
+	<html>
+        <head>
+            <H1>Bug Spray</H1>
+            <H1>Bear Repellant</H1>
+            <H1>Goat Food</H1>
+        </head>
+    </html>		
+</aura:component>

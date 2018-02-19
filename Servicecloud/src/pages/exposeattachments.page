@@ -1,0 +1,5 @@
+<apex:page controller="Attachmetnsexpose" >
+  <apex:repeat value="{!pictures}" var="pic">
+    <a href="{!URLFOR($Action.Attachment.Download, pic.id)}" >{!pic.name}</a><br/>
+</apex:repeat>
+</apex:page>

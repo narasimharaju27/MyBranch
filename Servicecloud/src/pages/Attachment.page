@@ -1,0 +1,15 @@
+<apex:page controller="attachclass">
+    <script>
+  function validate(){
+  validate();
+  }
+  </script>
+  <apex:form >
+  <apex:actionFunction name="validate" action="{!save2}"/>
+  
+      <apex:repeat value="{!atcm}" var="atc">
+          <apex:inputfile value="atc.Body" fileName="atc.name"></apex:inputfile>
+      </apex:repeat>
+      <apex:commandButton value="Submit" action="{!save1}" />
+  </apex:form>
+</apex:page>

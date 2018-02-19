@@ -1,0 +1,84 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false"  standardStylesheets="false">
+  <!-- Bootstrap -->
+  
+  <!--  <apex:includeScript value="{!URLFOR($Resource.jQuery, 'jquery-ui-1.11.4/jquery-ui.min.js')}"/> -->
+  
+  
+  
+   
+  <style>
+    body {
+        //font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+<body class="nav-expanded">
+  <script>
+  function enableDashboard () {
+      
+      document.getElementById("detailDashboard").style.display = "initial";
+      document.getElementById("detailProfile").style.display = "none";        
+      document.getElementById("profileConfirm").style.display = "none";        
+  }
+  
+  function enableProfile () {
+
+      document.getElementById("detailDashboard").style.display = "none";
+      document.getElementById("detailProfile").style.display = "initial";     
+      document.getElementById("profileConfirm").style.display = "none";
+  }
+
+  function enableConfirmProfile () {
+
+      document.getElementById("detailDashboard").style.display = "none";
+      document.getElementById("detailProfile").style.display = "none";     
+      document.getElementById("profileConfirm").style.display = "initial";
+  }
+    
+  $(document).ready(function() {
+      $('.dummy-toggle').click(function() {
+          $('body').toggleClass('nav-minimized').toggleClass('nav-expanded');
+      });
+      $('.avl-logo').click(function() {
+          $('body').toggleClass('nav-minimized').toggleClass('nav-expanded');
+      });            
+  });
+  </script>
+
+  
+
+  <div class="av-left-nav">
+    <a href="javascript:void(0);" class="avl-logo"><i class="ai-avendus"></i><span>Avendus</span></a>
+    <ul class="avl-menu">
+      <li class="active"><a href="javascript:enableDashboard();"><i class="ai-dashboard" style="font-size: 20px;"></i><span>Dashboard</span></a></li>
+      <li><a href="javascript:void(0);"><i class="ai-sale"></i><span>Sale</span></a></li>
+      <li><a href="javascript:enableProfile();"><i class="ai-profile" style="font-size: 20px;"></i><span>Profile</span></a></li>
+      <li><a href="javascript:void(0);"><i class="ai-help"></i><span>Help</span></a></li>
+      <li><a href="javascript:logout();"><i class="ai-help"></i><span>Logout</span></a></li>
+    </ul>
+  </div>
+  
+  <div id="banner">
+  <apex:image style="float:left;" url="https://c.cs50.content.force.com/servlet/servlet.ImageServer?id=0153B0000000Vk6&oid=00D3B000000D7dt"/>
+  <apex:outputLabel value="This is narasimharaju" style="float:right"/>
+  </div>
+  <br/>
+  <br/>
+  <hr width="100%"/>
+
+  <div id="DashboardOuterPanel">
+    <div layout="block" id="detailDashboard">
+      
+    </div>
+
+    <div layout="block" id="detailProfile" style="display:none;">
+      
+    </div>
+
+    <div layout="block" id="profileConfirm" style="display:none;">
+      
+    </div>
+  </div>
+  
+</body> 
+</apex:page>

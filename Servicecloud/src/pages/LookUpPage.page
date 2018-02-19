@@ -1,0 +1,40 @@
+<apex:page showHeader="true" controller="lookupClass"  standardStylesheets="false" sidebar="false" applyHtmlTag="true" applyBodyTag="false" docType="html-5.0" id="Page"> 
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+        <head>
+            <title>Audit Page</title>
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS104, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+        </head>  
+        
+        <body>
+            <script>
+	var newWin=null;
+	function openLookupPopup(name, id)
+	{
+		var url="/apex/LookupExamplePopup?namefield=Text"  ;
+		newWin=window.open(url, 'Popup','height=500,width=600,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no');
+		if (window.focus) 
+		{
+			newWin.focus();
+		}
+			
+	    return false;
+    }
+				  
+	function closeLookupPopup()
+	{
+	   if (null!=newWin)
+	   {
+	      newWin.close();
+	   }  
+	}
+</script>
+            <apex:form id="Form">
+                        <apex:inputText size="40" value="{!strCountry}" id="lookupCountry" />
+                        
+                        <button type="button" class="slds-button slds-button--neutral" onclick="openLookupPopup('{!strCountry}')">&nbsp;Save&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </apex:form>  
+            
+        </body>
+    </html>
+    
+</apex:page>

@@ -1,0 +1,36 @@
+<apex:page controller="MyCustomLookupController" id="Page" tabstyle="Contact" standardStylesheets="false" sidebar="false" showHeader="false" applyHtmlTag="true" applyBodyTag="false" docType="html-5.0">
+<apex:stylesheet value="{!URLFOR($Resource.SLDS104, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+
+<apex:sectionHeader title="Demo"  subtitle="Custom Lookup" />
+
+  <apex:form id="myForm">  
+    <apex:PageBlock id="PageBlock">   
+    <script>
+    function onChangeCountry(CountryBox)
+    {
+        var country = CountryBox;                               
+        SearchCountry(country.value);
+    }
+    function RemoveCountryPill(c_id)
+    {
+        var Cid = c_id;                             
+        removeCountry(Cid);             
+    }
+    </script>
+    
+    <!-- Start of Country Lookup Action functions -->
+    <apex:actionFunction action="{!onChangeCountryBox}" name="SearchCountry" rerender="OPCountry" oncomplete="setFocusCountry()">               
+        <apex:param name="strCountry" value="" assignTo="{!strCountry}"/>
+    </apex:actionFunction>
+    
+    <input id="lookupCountry" value="{!strCountry}" class="slds-input" type="text" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-activedescendant="" onkeyup="onChangeCountry(this)" onfocus="this.value = this.value;"/>
+    
+    <button type="button" class="slds-button slds-button--icon-bare slds-pill__remove" onclick="RemoveCountryPill('{!strCountry}')">
+        <img class="slds-button__icon" src="{!URLFOR($Resource.SLDS104,'/assets/icons/utility/close_60.png')}" />
+        <span class="slds-assistive-text">Remove</span>
+    </button>
+    
+    </apex:PageBlock>
+  </apex:form>
+
+</apex:page>

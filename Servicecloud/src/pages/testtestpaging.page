@@ -1,0 +1,10 @@
+<apex:page controller="Accountctr" sidebar="false" showHeader="false">
+   <apex:form >
+       <apex:repeat value="{!lstContact }">
+       <c:COntacttesting ></c:COntacttesting>
+       
+       </apex:repeat>
+   </apex:form>
+  
+  
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page standardController="DragDropToCloud__Cloud_Documents__c" extensions="DragDropToCloud.ViewDocumentOnAmazonExtn" action="{!RedirectToAmazon}">
+    <apex:pagemessages ></apex:pagemessages>
+    Downloading(Loading).... Please Wait!!
+    <apex:form >
+        <apex:inputHidden value="{!DragDropToCloud__Cloud_Documents__c.DragDropToCloud__Folder_Id__c}"/>
+    </apex:form>
+</apex:page>

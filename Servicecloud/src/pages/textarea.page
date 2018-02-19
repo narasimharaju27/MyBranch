@@ -1,0 +1,13 @@
+<apex:page standardController="Account" extensions="TextareaController">
+<apex:form >
+  <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
+    <apex:outputLabel value="{!blndisplay}" id="testa"></apex:outputLabel>
+    <apex:outputpanel id="outp" >
+    <apex:outputPanel rendered="{!blndisplay}">
+    <textarea></textarea>
+    </apex:Outputpanel>
+    </apex:outputPanel>
+    <apex:commandButton value="Render" action="{!textboxs}" rerender="outp,testa"/>
+</apex:form>
+</apex:page>

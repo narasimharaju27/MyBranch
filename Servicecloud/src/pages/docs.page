@@ -1,0 +1,585 @@
+<apex:page standardcontroller="Opportunity" showheader="false" sidebar="true" pageStyle="Width:70%" >
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        h1
+        {
+            font: normal 51px Helv,arial;
+        }
+        .auto-style1
+        {
+            width: 100%;
+        }
+
+
+        .auto-style6
+        {
+            width: 212px;
+        }
+
+
+        .auto-style7
+        {
+            width: 177px;
+        }
+
+
+        .auto-style9
+        {
+            width: 207px;
+        }
+
+
+        .auto-style11
+        {
+            width: 206px;
+        }
+
+
+        .auto-style12
+        {
+            width: 209px;
+        }
+
+
+        .auto-style13
+        {
+            width: 120px;
+        }
+
+
+        .auto-style15
+        {
+            width: 53px;
+        }
+
+
+        .auto-style16
+        {
+            width: 64px;
+        }
+
+
+        .auto-style18
+        {
+            width: 69px;
+        }
+
+
+        .auto-style19
+        {
+            width: 66px;
+        }
+
+
+        .auto-style20
+        {
+            width: 75px;
+        }
+
+
+        .auto-style21
+        {
+            width: 59px;
+        }
+
+
+        .auto-style22
+        {
+            width: 51px;
+        }
+
+
+        .auto-style24
+        {
+            width: 60px;
+        }
+
+
+        .auto-style25
+        {
+            width: 61px;
+        }
+
+
+        .auto-style26
+        {
+            width: 74px;
+        }
+
+
+        .auto-style27
+        {
+            width: 88px;
+        }
+
+
+        .auto-style28
+        {
+            width: 100px;
+        }
+
+
+        .auto-style29
+        {
+            width: 232px;
+        }
+       
+    </style>
+</head>
+<body style="width:70%">
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style13">&nbsp;</td>
+            <td colspan="5" style="text-align: right">
+                <h1>CONTRACT</h1>
+                <p>3006 Research Drive, State College, PA 16801  814-234-6072</p>
+            </td>
+        </tr>
+    </table>
+    <table class="auto-style1" border="1">
+
+
+        <tr>
+            <td></td>
+            <td colspan="4">
+                <table class="auto-style1" >
+                    <tr>
+                        <td>Contract No.:{!Opportunity.Name}</td>
+                        <td>Primary Agent: </td>
+                        <td>EXECUTED COPY</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; color: white; text-align: center" class="auto-style13">Summary</td>
+            <td colspan="2">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style11">Made this Date:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">Artist/Tour:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">Tax ID (of Artist):</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">Sponsor:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">Engagement Dates:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">Job Description:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; color: white; text-align: center" class="auto-style13">Venue</td>
+            <td>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style9">Venue Contact:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">Venue: </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">Address:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">Phone: </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">Mobile:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">Fax:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="auto-style1">
+
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Ticket Phone:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Ticket Website:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; color: white; text-align: center" class="auto-style13">FINANCIAL AGREEMENT</td>
+            <td colspan="2">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12">Financial Agreement:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <hr/>
+
+
+                <table class="auto-style1">
+                    <tr>
+                        <td rowspan="2" class="auto-style12">Deposit Schedule:</td>
+                        <td>Deposit 1:</td>
+                        <td>&nbsp;</td>
+                        <td>Deposit 2:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Deposit 1 Due:</td>
+                        <td>&nbsp;</td>
+                        <td>Deposit 2 Due:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+               
+
+
+
+
+                <table class="auto-style1">
+                    <thead>
+                        <tr>
+                            <td class="auto-style12">Ticket Schedule:
+                            </td>
+                            <td class="auto-style29">Ticket Type<hr />
+                            </td>
+                            <td>Quantity<hr />
+                            </td>
+                            <td>Price<hr />
+                            </td>
+
+
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="auto-style12">&nbsp;</td>
+                        <td class="auto-style29">General Admission<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">&nbsp;</td>
+                        <td class="auto-style29">Group 10+<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">&nbsp;</td>
+                        <td class="auto-style29">Premuim General Admission<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">&nbsp;</td>
+                        <td class="auto-style29">VIP Backstage Experience
+                        </td>
+                        <hr />
+                        <td>&nbsp;<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">&nbsp;</td>
+                        <td class="auto-style29">Sponsor Comps<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">&nbsp;</td>
+                        <td class="auto-style29">Capacity<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                        <td>&nbsp;<hr />
+                        </td>
+                    </tr>
+
+
+                </table>
+                <br />
+
+
+
+
+
+
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12">Balance Due Artist:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br />
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12">(Less Deposit)</td>
+                        <td>Balance due checks should be made payable to the artist as stated on their rider,
+                            plus any additional monies per the above Financial Agreement.</td>
+                    </tr>
+                </table>
+                <br />
+
+
+
+
+
+
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12">Special Provisions:</td>
+                        <td colspan="4" style="text-align: left">per SKG rider</td>
+
+
+                    </tr>
+
+
+                </table>
+                <br />
+
+
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12" >General Provisions:</td>
+                        <td colspan="4" style="text-align: left">
+                            <table class="auto-style1">
+                                <tr>
+                                    <td class="auto-style24" style="width:10%;">&nbsp;</td>
+                                    <td class="auto-style18" style="width:10%;">Sponsor</td>
+                                    <td class="auto-style16" style="width:10%;">Artist</td>
+                                    <td class="auto-style19" style="width:8%;">&nbsp;</td>
+                                    <td class="auto-style26" style="width:10%;">Sponsor</td>
+                                    <td class="auto-style22" style="width:10%;">Artist</td>
+                                    <td class="auto-style28" style="width:10%;">&nbsp;</td>
+                                    <td class="auto-style28" style="width:10%;">Sponsor</td>
+                                    <td class="auto-style28" style="width:10%;">Artist</td>
+
+
+                                </tr>
+                            </table>
+
+
+                            <table class="auto-style1" border="1" border-style="Solid">
+                                <tr>
+                                    <td class="auto-style25" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">Sound:</td>
+                                    <td class="auto-style16" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">x</td>
+                                    <td class="auto-style15" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">&nbsp;</td>
+                                    <td class="auto-style20" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">Meals:</td>
+                                    <td class="auto-style20" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">x</td>
+                                    <td class="auto-style21" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">&nbsp;</td>
+                                    <td class="auto-style27" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">Backlines:</td>
+                                    <td class="auto-style27" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">x</td>
+                                    <td class="auto-style27" style="border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-style: none;">&nbsp;</td>
+
+
+                                </tr>
+                            </table>
+
+
+                            <table class="auto-style1">
+                                <tr>
+                                    <td class="auto-style24" style="width:10%;">&nbsp;</td>
+                                    <td class="auto-style18" style="width:10%;">Sponsor</td>
+                                    <td class="auto-style16" style="width:10%;">Artist</td>
+                                    <td class="auto-style19" style="width:8%;">&nbsp;</td>
+                                    <td class="auto-style26" style="width:10%;">Sponsor</td>
+                                    <td class="auto-style22" style="width:10%;">Artist</td>
+                                    <td class="auto-style28" style="width:10%;">&nbsp;</td>
+                                    <td class="auto-style28" style="width:10%;">Sponsor</td>
+                                    <td class="auto-style28" style="width:10%;">Artist</td>
+
+
+                                </tr>
+                            </table>
+                            <table class="auto-style1" border="1">
+                                <tr>
+                                    <td class="auto-style25" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">Lights:</td>
+                                    <td class="auto-style16" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">x</td>
+                                    <td class="auto-style15" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">&nbsp;</td>
+                                    <td class="auto-style20" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">Lodging:</td>
+                                    <td class="auto-style20" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">x</td>
+                                    <td class="auto-style21" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">&nbsp;</td>
+                                    <td class="auto-style27" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">Ground Trans:</td>
+                                    <td class="auto-style27" style="border-left-style: none;border-top-style: none;border-bottom-style: none;">x</td>
+                                    <td class="auto-style27" style="border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-style: none;">&nbsp;</td>
+
+
+                                </tr>
+                            </table>
+                        </td>
+
+
+                    </tr>
+
+
+                </table>
+                <br />
+
+
+
+
+
+
+
+
+            </td>
+        </tr>
+        <tr class="auto-style13" style="height:10px;background-color:black;">
+        <td colspan="5"  style="height:10px;background-color:black;"></td>
+        </tr>
+        <tr>
+            <td class="auto-style13" style="background-color: black; color: white; text-align: center">LEGAL</td>
+            <td colspan="2">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12">Cancellation Clause:</td>
+                        <td class="auto-style6" colspan="4">Sponsor will be required to pay Balance Due Artist in full on the occasion of a cancellation by Sponsor within ninety (90) days or less of the concert performance. Sponsor will be required to pay one-half of Balance Due Artist if cancellation occurs prior to ninety (90) days of the performance date.<br /><br/>
+                        </td>
+
+
+                    </tr>
+                    
+                    <tr>
+                    
+                        <td class="auto-style12">Confirmation:</td>
+                        <td>This agreement is entered into by the undersigned parties for the purpose of establishing good communication and mutual understanding. Please return this agreement to Pure Freedom signed and accompanied by the non-refundable deposit(s) and any attached rider(s). The Sponsor's signature acknowledges he/she is in agreement with all information contained in this contract, as well as the attached rider(s).</td>
+                    </tr>
+                    
+                </table>
+            </td>
+            <!--<td>Cancellation Clause:</td>-->
+            <!--<td class="auto-style6" colspan="4">Sponsor will be required to pay Balance Due Artist in full on the occasion of a cancellation by Sponsor within ninety (90) days or less of the concert performance. Sponsor will be required to pay one-half of Balance Due Artist if cancellation occurs prior to ninety (90) days of the performance date.</td>-->
+        </tr>
+         <tr class="auto-style13" style="height:10px;background-color:black;">
+        <td colspan="5"  style="height:10px;background-color:black;"></td>
+        </tr>
+        <tr>
+            <td class="auto-style13" style="background-color: black; color: white; text-align: center">SIGNATURE</td>
+            <td colspan="2">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style12" colspan="5">Any changes by the Sponsor to this contract must be communicated in writing within fourteen (14) days of receipt and will be subject to Artist's approval.<br/><br/></td>
+
+
+                    </tr>
+                    
+                    <tr>
+                    
+                        <td class="auto-style12">Sponsor's Signature:</td>
+                        <td class="auto-style7"></td>
+                        <td>Date:</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="auto-style12">Name:</td>
+                        <td class="auto-style7"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">Organization:</td>
+                        <td class="auto-style7"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">Address:</td>
+                        <td class="auto-style7"></td>
+                        <td>Phone:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">Day of Show Contact:</td>
+                        <td class="auto-style7"></td>
+                        <td>Email:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">Phone:</td>
+                        <td class="auto-style7"></td>
+                        <td>Email:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">Artist Signature:</td>
+                        <td class="auto-style7"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style12">Artist/Tour:</td>
+                        <td class="auto-style7"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+            </td>
+        </tr>
+
+
+    </table>
+
+
+</body>
+</html>
+
+
+
+
+</apex:page>

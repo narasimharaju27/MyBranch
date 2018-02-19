@@ -1,0 +1,3 @@
+<apex:page docType="html-5.0" id="pageId" tabStyle="DragDropToCloud__Cloud_Documents__c">
+	<c:DragDropComponent id="componentOuterId"/>
+</apex:page>

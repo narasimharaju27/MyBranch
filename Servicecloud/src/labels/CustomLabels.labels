@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Revenue_Split</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue_Split</shortDescription>
+        <value>Sales Representative Revenue Split</value>
+    </labels>
+    <labels>
+        <fullName>lststrprofiles</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>lststrprofiles</shortDescription>
+        <value>System Administrator</value>
+    </labels>
+</CustomLabels>

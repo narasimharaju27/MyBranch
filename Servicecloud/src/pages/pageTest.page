@@ -1,0 +1,39 @@
+<apex:page standardController="Account" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" >
+ <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+      <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Salesforce Lightning Design System walgreens Application</title>
+        <apex:stylesheet value="{!URLFOR($Resource.SLDS104, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.SLDS104, 'assets/styles/salesforce-lightning-design-system-ltng.css')}" />
+      
+  </head>
+  <body>
+   
+  <div class="slds">
+   <div class="slds-page-header">
+ <div class="slds-tabs--default slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--3-of-4">
+  <ul class="slds-tabs--default__nav" role="tablist">
+    <li class="slds-tabs--default__item slds-text-heading--label slds-active   " title="Item One" 
+    role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Item One</a></li>
+  <li class="slds-tabs--default__item slds-text-heading--label  " style="word-wrap: break-word;" title="Item Two"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Item Two</a></li>
+    <li class="slds-tabs--default__item slds-text-heading--label  " title="Item Three"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Three</a></li>
+    <li class="slds-tabs--default__item slds-text-heading--label  " title="Item four"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Four</a></li>
+      <li class="slds-tabs--default__item slds-text-heading--label  " title="Item five"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Five</a></li>
+      <li class="slds-tabs--default__item slds-text-heading--label  " title="Item five"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Six</a></li>
+     <li class="slds-tabs--default__item slds-text-heading--label  " title="Item five"
+      role="presentation"><a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Seven</a></li>
+    </ul>
+  <div id="tab-default-1" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">Item One Content</div>
+  <div id="tab-default-2" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">Item Two Content</div>
+  <div id="tab-default-3" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">Item Three Content</div>
+</div>
+</div></div>
+  </body>
+  </html>
+</apex:page>

@@ -1,0 +1,19 @@
+<apex:component controller="TestCntl" >
+
+    <apex:attribute name="id" description="This is the value for the component."
+
+        type="String" required="false"/>
+
+    <apex:attribute name="borderColor" description="This is color for the border."
+
+        type="String" required="false"/>
+
+    <h1 style="border:">
+
+        
+        <apex:iframe src="apex/testpaging?id=0012800000klZSk" frameborder="false"/> pageName="testpaging"/>
+
+    </h1>
+
+
+</apex:component>

@@ -1,0 +1,9 @@
+<apex:page controller="TestRollback" >
+<apex:form >
+<apex:commandbutton value="SaveRec" action="{!CreateRecord}"/>
+<apex:commandbutton value="Rollback" action="{!rollbackrecord}" rerender="Test"/>
+<apex:outputpanel id="Test">
+<apex:inputTextarea styleClass="profClass" readonly="true" richtext="true"/>  
+</apex:outputpanel>
+</apex:form>
+</apex:page>
