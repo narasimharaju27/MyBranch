@@ -7,7 +7,7 @@
             <li class="list-group-item">
                 <a href="{! '#Acc/' + Acc.Id }">
                     <p>{!Acc.Name}</p>
-                    //Comments adding to commit
+                    //Comments adding to commiting
                 </a>
             </li>
         </aura:iteration>
